@@ -1,0 +1,103 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins;
+}
+
+/* variables */
+:root {
+    --water: #38ada9;
+    --mandarin: #e55039;
+    --smaritan: #3c6382;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container .card {
+    border: 2px solid rgba(147, 147, 147, 0.51);
+    margin: 20px;
+    width: 300px;
+}
+
+.container .card .icon-place {
+    background: white;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.container .card .text-place {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.container .card .text-place p{
+    margin-top: 20px;
+}
+
+.container .card .text-place::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top:-15px;
+    left: calc(50% - 15px);
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+}
+
+.container .card .text-place .counter {
+    font-size: 50px;
+}
+
+/* icon place i */
+.container .card.card1 .icon-place i {
+    color: var(--water);
+}
+
+.container .card.card2 .icon-place i {
+    color: var(--mandarin);
+}
+
+.container .card.card3 .icon-place i {
+    color: var(--smaritan);
+}
+
+/* card before */
+.container .card.card1 .text-place::before{
+    background-color: var(--water)
+}
+.container .card.card2 .text-place::before{
+    background-color: var(--mandarin)
+}
+.container .card.card3 .text-place::before{
+    background-color: var(--smaritan)
+}
+
+/* text-place */
+.container .card.card1 .text-place {
+    background: var(--water);
+}
+
+.container .card.card2 .text-place {
+    background: var(--mandarin);
+}
+
+.container .card.card3 .text-place {
+    background: var(--smaritan);
+}
