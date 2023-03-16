@@ -8,6 +8,8 @@ counters.forEach((counter) => {
     let speed = maxNum / 100;
     if (counterText < maxNum) {
       counter.innerText = counterText + Math.ceil(speed);
+    }else{
+      counter.innerText = maxNum;
     }
     setInterval(() => {
       SetCounterUp();
