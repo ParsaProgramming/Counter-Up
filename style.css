@@ -101,3 +101,9 @@ body {
 .container .card.card3 .text-place {
     background: var(--smaritan);
 }
+
+@media (max-width: 720px){
+    .container{
+        flex-direction: column;
+    }
+}
